@@ -171,7 +171,7 @@ def train(args):
         optimizer = torch.optim.SGD(parameters, lr=args.lr,
                                     momentum=args.momentum, nesterov=True)
 
-    dev_data = whDataset_comb(args.input_file, 'src/vocab.pkl', args.num_sub)
+    dev_data = whDataset_comb(args.input_file, 'vocab.pkl', args.num_sub)
     dev_collator = MyCollator(wd_ment_edge=(args.wd_ment_edge==1), ad_ment_edge=(args.ad_ment_edge==1), \
                                 with_cand_edge=(args.cand_edge==1), doc_edge = (args.doc_edge==1),
                                 all_ment_edge = (args.all_ment_edge==1), cand2ment_edge = (args.cand2ment_edge==1), gnn_type = args.gnn_type, 
