@@ -1,4 +1,4 @@
-# SAE
+# HDEGraph
 Code for ACL 2019 paper "[Multi-hop Reading Comprehension across Multiple Documents by Reasoning over Heterogeneous Graphs](https://www.aclweb.org/anthology/P19-1260/)"
 
 Based on PyTorch
